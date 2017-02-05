@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "flow-bin": "^0.38.0"
+  },
+  "dependencies": {
+    "runtime-types": "^1.0.7"
   }
 }
