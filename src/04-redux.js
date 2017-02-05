@@ -17,12 +17,18 @@ function user(state: State, action: Actions): State {
       // Flow ensures we don't access action props for the wrong branch.
       // For example action.name would error because we said name exists only
       // when the type is rename.
+
+      //action.name;
+
       return {
         ...state,
         age: state.age + action.years
       };
     case 'rename':
       // Flow ensures we don't return an invalid value.
+
+      // return { name: action.name };
+
       return {
         ...state,
         name: action.name
